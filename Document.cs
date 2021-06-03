@@ -47,12 +47,20 @@ namespace FactoryPatternSample
 
     public class RobotFreeRdpBundle : RobotFreeRdp
     {
-
+        public void Sample()
+        {
+            var tmp = new RdpCore();
+            tmp.BuildSession("RobotFreeRdpBundle");
+        }
     }
 
     public class RobotFreeRdpSeperator : RobotFreeRdp
     {
-
+        public void Sample()
+        {
+            var tmp = new RdpCore();
+            tmp.BuildSession("RobotFreeRdpSeperator");
+        }
     }
 
     public abstract class RobotFreeRdpOption
@@ -67,15 +75,15 @@ namespace FactoryPatternSample
             switch (type)
             {
                 case "Bundle":
-                    var tmp = new RdpCore();
-                    tmp.BuildSession(type);
-                    tmp.CloseSession(type);
+                    var tmp = new RobotFreeRdpBundle();
+                    tmp.Sample();
                     break;
+
                 case "Seperate":
-                    var tmp1 = new RdpCore();
-                    tmp1.BuildSession(type);
-                    tmp1.CloseSession(type);
+                    var tmp1 = new RobotFreeRdpSeperator();
+                    tmp1.Sample();
                     break;
+
                 default:
                     throw new ArgumentException("Invalid type", "type");
             }
