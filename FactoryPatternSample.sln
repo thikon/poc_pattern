@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory", "Factory", "{F5636357-51B2-4E06-BD8C-764B2A5178AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48589B1E-A692-4B30-BD6C-4756EB4C45A8} = {F5636357-51B2-4E06-BD8C-764B2A5178AE}
+		{0CFA5293-FB2C-4339-85B3-6F97A09496C2} = {F5636357-51B2-4E06-BD8C-764B2A5178AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {57CC7C2D-B507-44FC-912F-86BE948929EA}
